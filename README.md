@@ -1,12 +1,12 @@
 # Internet-Connection-CSV-Logger
-# Created in November 2017
+Created in November 2017
 
-# If your internet drops out regularly it can be handy to have evidence to show your ISP.  
-# This python script will run every 30 seconds, try and connect to Google and if it 
-# fails, it will add the date and time of the failure to a CSV file for proof.
+If your internet drops out regularly it can be handy to have evidence to show your ISP.  
+This python script will run every 30 seconds, try and connect to Google and if it 
+fails, it will add the date and time of the failure to a CSV file for proof.
 
-# Latest source : https://github.com/therealrobster/Internet-Connection-CSV-Logger
-# license : https://github.com/therealrobster/Internet-Connection-CSV-Logger/blob/master/LICENSE
+Latest source : https://github.com/therealrobster/Internet-Connection-CSV-Logger
+license : https://github.com/therealrobster/Internet-Connection-CSV-Logger/blob/master/LICENSE
 
 You will need python installed.
 If python is ready, to run load your command line and type:
