@@ -32,9 +32,11 @@ def is_connected():
 while True:
   if is_connected() == False:
     data = [datetime.datetime.now().strftime("%y-%m-%d"), datetime.datetime.now().strftime("%H:%M"), "No connection"]
-    out = csv.writer(open("connectoinLog.csv","a"), delimiter=',',quoting=csv.QUOTE_ALL)
+    out = csv.writer(open("connectionLog.csv","a"), delimiter=',',quoting=csv.QUOTE_ALL)
     out.writerow(data)
     print("writing CSV data")
+  else:
+    print("connection alive, moving on...")
 
   #rest for a bit, the forum isn't that busy
   restTime = 30  #300 is 5 minutes 
