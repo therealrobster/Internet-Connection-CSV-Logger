@@ -34,13 +34,14 @@ while True:
     data = [datetime.datetime.now().strftime("%y-%m-%d"), datetime.datetime.now().strftime("%H:%M"), "No connection"]
     out = csv.writer(open("connectionLog.csv","a"), delimiter=',',quoting=csv.QUOTE_ALL)
     out.writerow(data)
-    print("writing CSV data")
+    print("Connection Drop Out!  (writing CSV data)")
+    print("========================================")
   else:
     print("connection alive, moving on...")
 
-  #rest for a bit, the forum isn't that busy
+  #rest for a bit, no need to go mad on connection checks
   restTime = 30  #300 is 5 minutes 
   minutes = restTime / 60
-  print "Resting for " + str(minutes) + " minutes before trying again..."
+  print "Resting for " + str(minutes) + " minutes (about ", str(restTime), " seconds) before trying again..."
   time.sleep(restTime)
 
